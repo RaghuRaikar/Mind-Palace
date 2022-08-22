@@ -13,6 +13,25 @@
   }
 }
 
+nav {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: greenyellow;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
