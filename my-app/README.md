@@ -1,5 +1,5 @@
 # Progress from Devs:
-Uriah - Map added on 08/24/22, shows location and locates current user, will add "stores" generated around the user's location
+Uriah - Map added on 08/24/22, shows location and locates current user, will add "stores" generated around the user's location. Also added dependencies for the map and autocomplete functions.
 
 # Getting Started with Create React App
 
