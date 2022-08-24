@@ -1,3 +1,6 @@
+# Progress from Devs:
+Uriah - Map added on 08/24/22, shows location and locates current user, will add "stores" generated around the user's location
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
