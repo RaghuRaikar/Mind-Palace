@@ -44,7 +44,8 @@ export default function Location() {
 
   //take out key after project completion
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCPt4cYU7eDJf5TKmAsLesZQsP9t9Kahjc",
+    //request key from Uriah for demo
+    googleMapsApiKey: "",
     libraries,
   });
 
