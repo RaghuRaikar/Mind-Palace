@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 import LandingPage from './pages/LandingPage';
 import CustomerAuth from './pages/CustomerAuth';
 import AdminAuth from './pages/AdminAuth';
 import Email from './pages/Email';
 import Messaging from './pages/Messaging';
 import Location from './pages/Location';
+
+import SupportAdmin from './SupportAdmin';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
             <Route path="/email" element={<Email />} />
             <Route path="/messaging" element={<Messaging />} />
             <Route path="/location" element={<Location />} />
+            <Route path="/support" element={<SupportAdmin />} />
       </Routes>
     </Router>
 );
