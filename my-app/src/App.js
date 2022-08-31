@@ -9,6 +9,8 @@ import Email from './pages/Email';
 import Messaging from './pages/Messaging';
 import Location from './pages/Location';
 
+import SupportAdmin from './SupportAdmin';
+
 function App() {
   return (
     <Router>
@@ -27,6 +29,7 @@ function App() {
             <Route path="/email" element={<Email />} />
             <Route path="/messaging" element={<Messaging />} />
             <Route path="/location" element={<Location />} />
+            <Route path="/support" element={<SupportAdmin />} />
       </Routes>
     </Router>
 );
