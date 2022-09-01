@@ -1,11 +1,27 @@
 import React from 'react';
+import { auth, provider } from "../firebase-config";
+import { signInWithPopup } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
- const CustomerAuth = () => {
-     return (
-         <div>
-             Work on Customer Auth Feature Here.
-         </div>
-     );
- };
-
- export default CustomerAuth; 
+function CustomerAuth({ setIsAuth }) {
+    let navigate = useNavigate();
+  
+    const signInWithGoogle = () => {
+      signInWithPopup(auth, provider).then((result) => {
+        localStorage.setItem("isAuth", true);
+        setIsAuth(true);
+        navigate("/");
+      });
+    };
+  
+    return (
+      <div className="loginPage">
+        <p> Customer Login/Signup </p>
+        <button className="login-with-google-btn" onClick={signInWithGoogle}>
+          Sign in with Google
+        </button>
+      </div>
+    );
+  }
+  
+  export default CustomerAuth;
