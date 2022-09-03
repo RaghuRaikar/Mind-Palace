@@ -1,6 +1,7 @@
 import React from "react";
 import SupportEngine from "../SupportEngine";
 import "../styleSheets/LandingPage.css";
+import ChatAI from "../components/ChatAI";
 
 import { useNavigate, Link } from "react-router-dom";
 
@@ -21,7 +22,7 @@ const LandingPage = () => {
       <div className="landing-buttons">
         <button onClick={() => navigate("./userhome")}>User View</button>
         <button onClick={() => navigate("./adminhome")}>Admin view</button>
-        <SupportEngine />
+        <ChatAI />
       </div>
     </div>
   );

@@ -16,6 +16,7 @@ import CustomerEmail from "./pages/CustomerEmail";
 import EmailConfirmation from "./pages/EmailConfirmation";
 import AdminHome from "./pages/AdminHome";
 import AdminEmail from "./pages/AdminEmail";
+import ChatAI from "./components/ChatAI";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
