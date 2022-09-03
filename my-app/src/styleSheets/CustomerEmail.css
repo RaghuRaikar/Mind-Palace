@@ -1,0 +1,43 @@
+.email-content{
+    width: 1200px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form-container-user{
+
+}
+
+.email-form-user{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.email-form-user input[type=text], input[type=email]{
+    background-color: #f5f5f5;
+    border: none;
+    min-height: 48px;
+    min-width: 1038px;
+}
+
+.email-form-user input[type=file]{
+    margin-top: 5px;
+}
+
+.email-form-user textarea{
+    background-color: #f5f5f5;
+    border: none;
+    min-height: 190px;
+}
+
+.email-submit-button {
+    width: 120px;
+    height: 40px;
+    align-self: flex-end;
+    border-radius: 5px;
+    padding: 12px, 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+}

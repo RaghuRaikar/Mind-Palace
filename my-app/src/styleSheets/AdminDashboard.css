@@ -1,0 +1,76 @@
+.admin-ui{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* change height to 100vh if there are problems */
+}
+
+/* ui container comes from userHome.css */
+
+.dashboard-content{
+    width: 100%;
+    /* change width to 1200px if there are problems */ 
+    margin-left: 30px;
+}
+
+.task-container{
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 50px;
+}
+
+
+.task-container div{
+    background-color: #F1F1F1;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px, 35px;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+.right-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-top-nav {
+    min-width: 300px;
+    min-height: 60px;
+    border: 1px solid black;
+    background-color: #F4D06F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-tasks{
+    min-width: 300px;
+    min-height: 330px;
+    border: 1px solid red;
+    margin-bottom: 10px;
+    background-color: #FFF8F0;
+}
+
+.notes {
+    min-width: 300px;
+    height: 100vh;
+    border: 1px solid green;
+    background-color: #FFF8F0;
+}
+.notes h2 {
+    margin-left: 20px;
+}
+
+.notes textarea {
+    margin-left: 20px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 400px;
+    max-height: 400px;
+    
+}

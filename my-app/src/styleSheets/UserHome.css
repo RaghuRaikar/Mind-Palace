@@ -1,0 +1,105 @@
+.user-ui{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.ui-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.home-content{
+    width: 1200px;
+    margin-left: 30px;
+}
+
+.top-row{
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 30px;
+}
+.top-row div {
+    min-height: 165px;
+    min-width: 300px;
+    max-height: 165px;
+    max-width: 300px;
+    border: 1px solid red;
+    margin-right: 30px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    border: 1px solid #827F7C;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(57, 47, 90, 0.25);
+}
+
+.top-row button {
+    padding: 8px, 20px;
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #392F5A;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-row{
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 50px;
+}
+
+
+.bottom-row div {
+    min-height: 165px;
+    min-width: 300px;
+    max-height: 165px;
+    max-width: 300px;
+
+    margin-right: 30px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    border: 1px solid #827F7C;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    box-shadow: 0px 4px 4px rgba(57, 47, 90, 0.25);
+}
+
+.bottom-row button {
+    padding: 8px, 20px;
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #392F5A;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-selections {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.contact-selections div {
+    min-height: 80px;
+    min-width: 212px;
+    
+    margin-right: 30px;
+    background-color: #9dd9d2;
+    cursor: pointer;
+    border-radius: 5px;
+}

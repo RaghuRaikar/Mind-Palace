@@ -1,0 +1,21 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    background-color: #FFF8F0;    
+    
+}
+
+.sidebar div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+}
