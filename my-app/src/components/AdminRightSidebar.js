@@ -1,19 +1,39 @@
 import "../styleSheets/AdminDashboard.css";
-import bell from "../icons/bell.png";
 import account from "../icons/account.png";
-import { Link } from "react-router-dom";
+//import bell from "../icons/bell.png";
+
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+import { auth } from "../firebase-config";
+import { signOut } from "firebase/auth";
 
 const AdminRightSidebar = () => {
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+  const [isUser, setIsUser] = useState(localStorage.getItem("isUser"));
+
+  const navigate = useNavigate();
+
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear();
+      setIsAuth(false);
+      setIsUser(false);
+      //window.location.pathname = "/";
+      navigate("/");
+    });
+  };
+
   return (
     <div className="right-sidebar">
       <div className="admin-top-nav">
         <h3>Welcome back</h3>
-        <Link to="/adminhome">
+        {/* <button>
           <img className="bell-icon" alt="notification" src={bell}></img>
-        </Link>
-        <Link to="/adminhome">
-          <img className="account-icon" alt="account" src={account}></img>
-        </Link>
+        </button> */}
+        <button onClick={signUserOut}>
+          <img className="admin-account-icon" alt="account" src={account}></img>
+        </button>
       </div>
       <div className="upcoming-tasks">
         <h2>Upcoming Tasks</h2>

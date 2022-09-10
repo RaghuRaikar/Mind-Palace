@@ -21,3 +21,12 @@ a {
     margin-left: 15px;
     font-size: 20px;
 }
+
+.sidebar button {
+    background-color: transparent;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
+    margin-left: 10px;    
+}
+

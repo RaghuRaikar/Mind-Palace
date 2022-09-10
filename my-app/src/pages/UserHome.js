@@ -7,6 +7,8 @@ import chatWithUs from "../icons/chat-user-icon.png";
 import textUs from "../icons/mobile-user-icon.png";
 import questionMark from "../icons/faq-user-icon.png";
 
+import ChatAI from "../components/ChatAI";
+
 const UserHome = () => {
   const navigate = useNavigate();
 
@@ -66,7 +68,7 @@ const UserHome = () => {
           </div>
           <h2>Still have questions? We're here to help!</h2>
           <div className="contact-selections">
-            <div onClick={() => navigate("/email-us")}>
+            <div onClick={() => navigate("/userhome")}>
               <img
                 className="contact-us-img"
                 alt="FAQ"
@@ -75,7 +77,7 @@ const UserHome = () => {
               <b1 className="contact-us-text">FAQs</b1>
             </div>
 
-            <div onClick={() => navigate("/email-us")}>
+            <div onClick={() => console.log("chat with us clicked")}>
               <img
                 className="contact-us-img"
                 alt="Live Chat"
@@ -98,6 +100,7 @@ const UserHome = () => {
             </div>
           </div>
         </div>
+        <ChatAI />
       </div>
     </div>
   );

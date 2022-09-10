@@ -1,9 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+import { useState } from "react";
+
+import { auth } from "../firebase-config";
+import { signOut } from "firebase/auth";
+
 import "../styleSheets/UserSidebar.css";
 import indicator from "../icons/page-indicator-user.png";
 import logo from "../icons/logo-user-nav.png";
+import account from "../icons/account.png";
 
 const UserSidebar = () => {
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+  const [isUser, setIsUser] = useState(localStorage.getItem("isUser"));
+
+  const navigate = useNavigate();
+
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear();
+      setIsAuth(false);
+      setIsUser(false);
+      //window.location.pathname = "/";
+      navigate("/");
+    });
+  };
+
   return (
     <div className="sidebar">
       <div className="logo-container">
@@ -27,8 +49,17 @@ const UserSidebar = () => {
           <div className="store-locations">
             <Link to="/location">Locations</Link>
           </div>
-          <div className="settings">
+          <div className="user-settings-div">
             <Link to="/userhome">Settings</Link>
+          </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
           </div>
         </>
       )}
@@ -53,6 +84,15 @@ const UserSidebar = () => {
           <div className="settings">
             <Link to="/userhome">Settings</Link>
           </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
+          </div>
         </>
       )}
       {window.location.href.includes("user-order-history") && (
@@ -75,6 +115,15 @@ const UserSidebar = () => {
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
+          </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
           </div>
         </>
       )}
@@ -99,6 +148,15 @@ const UserSidebar = () => {
           <div className="settings">
             <Link to="/userhome">Settings</Link>
           </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
+          </div>
         </>
       )}
       {window.location.href.includes("user-settings") && (
@@ -122,6 +180,15 @@ const UserSidebar = () => {
             <img src={indicator}></img>
             <Link to="/userhome">Settings</Link>
           </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
+          </div>
         </>
       )}
       {window.location.href.includes("email") && (
@@ -143,6 +210,15 @@ const UserSidebar = () => {
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
+          </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
           </div>
         </>
       )}
@@ -167,6 +243,15 @@ const UserSidebar = () => {
           <div className="settings">
             <Link to="/userhome">Settings</Link>
           </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
+          </div>
         </>
       )}
       {window.location.href.includes("location") && (
@@ -189,6 +274,15 @@ const UserSidebar = () => {
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
+          </div>
+          <div className="user-signout">
+            <button onClick={signUserOut}>
+              <img
+                className="user-account-icon"
+                alt="account"
+                src={account}
+              ></img>
+            </button>
           </div>
         </>
       )}

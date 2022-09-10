@@ -16,7 +16,7 @@ const AdminSidebar = () => {
             <Link to="/adminhome">Dashboard</Link>
           </div>
           <div className="chat">
-            <Link to="/userhome">Chat</Link>
+            <Link to="/adminhome">Chat</Link>
           </div>
           <div className="email">
             <Link to="/admin-email-view">Email</Link>
@@ -25,7 +25,7 @@ const AdminSidebar = () => {
             <Link to="/videocall">Video Chat</Link>
           </div>
           <div className="settings">
-            <Link to="/userhome">Settings</Link>
+            <Link to="/adminhome">Settings</Link>
           </div>
         </>
       )}
@@ -45,7 +45,7 @@ const AdminSidebar = () => {
             <Link to="/videocall">Video Chat</Link>
           </div>
           <div className="settings">
-            <Link to="/userhome">Settings</Link>
+            <Link to="/adminhome">Settings</Link>
           </div>
         </>
       )}
