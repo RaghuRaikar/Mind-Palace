@@ -39,13 +39,11 @@ const options = {
 
 export default function Location() {
   const navigate = useNavigate();
-  const [error, setError] = useState(null);
-  const [show, setShow] = useState(false);
 
   //take out key after project completion
   const { isLoaded, loadError } = useLoadScript({
     //request key from Uriah for demo
-    googleMapsApiKey: "",
+    googleMapsApiKey: "AIzaSyCPt4cYU7eDJf5TKmAsLesZQsP9t9Kahjc",
     libraries,
   });
 
@@ -84,13 +82,6 @@ export default function Location() {
       <Search panTo={panTo} />
       <Locate panTo={panTo} />
 
-      {/* 
-      Map displays here
-      Trying to figure out how to interface with the API,
-      I think I'll need a search menu so people can look for what they want,
-      then pan to the user's specified address and return the cuisines via the
-      API 
-      */}
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={8}
@@ -98,28 +89,10 @@ export default function Location() {
         options={options}
         onLoad={onMapLoad}
       >
-        {/* Need to add markers here */}
-        {markers.map((marker) => (
-          <Marker
-            key={`${marker.lat}-${marker.lng}`}
-            position={{ lat: marker.lat, lng: marker.lng }}
-            onClick={() => {
-              setSelected(marker);
-            }}
-          />
-        ))}
-
-        {/* business name here */}
-        {selected ? (
-          <InfoWindow
-            position={{ lat: selected.lat, lng: selected.lng }}
-            onCloseClick={() => {
-              setSelected(null);
-            }}
-          >
-            <div></div>
-          </InfoWindow>
-        ) : null}
+        <Marker
+          position={center}
+          icon="https://lakelandescaperoom.com/wp-content/uploads/2019/11/google-map-marker-red-peg-png-image-red-pin-icon-png-clipart-pins-on-a-map-png-880_1360.jpg"
+        ></Marker>
       </GoogleMap>
     </div>
   );
@@ -141,7 +114,12 @@ function Locate({ panTo }) {
         );
       }}
     >
-      <img src="../../public/compass.svg" alt="compass" />
+      <img
+        src="https://t4.ftcdn.net/jpg/02/47/29/37/240_F_247293735_hP4Y1PWrYLPODg0zaWPeSa4CUJu0cvI9.jpg"
+        alt="compass"
+        width="30"
+        height="30"
+      />
     </button>
   );
 }
@@ -187,7 +165,7 @@ function Search({ panTo }) {
           value={value}
           onChange={handleInput}
           disabled={!ready}
-          placeholder="Input your destination"
+          placeholder="Click below for live location"
         />
         <ComboboxPopover>
           <ComboboxList>
