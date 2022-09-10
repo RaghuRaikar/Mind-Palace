@@ -1,14 +1,13 @@
 import { useState } from "react";
 //import Button from "@mui/material/Button"
 //import VideoCall from "./VideoCall";
-import VideoCallDisplay from "./VideoCallDisplay" //video call display component
+import VideoCallDisplay from "./VideoCallDisplay"; //video call display component
 function App() {
-
   const [isShown, setIsShown] = useState(false);
 
-  const handleClick = event => {
+  const handleClick = (event) => {
     //toggle shown state
-    setIsShown(current => !current);
+    setIsShown((current) => !current);
 
     //or simply set it to true
     //setIsShown(true);
@@ -34,9 +33,10 @@ function App() {
 
     <div className="App">
       {/*Button only shows up if it hasn't been clicked yet.*/}
-      {!isShown && <button onClick={handleClick}>Click</button>}
+      {/* {!isShown && <button onClick={handleClick}>Click</button>} */}
       {/*show component on click*/}
-      {isShown && <VideoCallDisplay />}
+      {/* {isShown && <VideoCallDisplay />} */}
+      <VideoCallDisplay />
     </div>
   );
 }

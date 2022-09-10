@@ -21,8 +21,8 @@ const AdminSidebar = () => {
           <div className="email">
             <Link to="/admin-email-view">Email</Link>
           </div>
-          <div className="text">
-            <Link to="/userhome">Text</Link>
+          <div className="video">
+            <Link to="/videocall">Video Chat</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
@@ -41,8 +41,8 @@ const AdminSidebar = () => {
             <img src={indicator}></img>
             <Link to="/admin-email-view">Email</Link>
           </div>
-          <div className="text">
-            <Link to="/userhome">Text</Link>
+          <div className="video">
+            <Link to="/videocall">Video Chat</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
