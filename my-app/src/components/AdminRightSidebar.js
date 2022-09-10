@@ -15,7 +15,9 @@ const AdminRightSidebar = () => {
           <img className="account-icon" alt="account" src={account}></img>
         </Link>
       </div>
-      <div className="upcoming-tasks"></div>
+      <div className="upcoming-tasks">
+        <h2>Upcoming Tasks</h2>
+      </div>
       <div className="notes">
         <h2>Notes</h2>
         <textarea className="notes-area"></textarea>
