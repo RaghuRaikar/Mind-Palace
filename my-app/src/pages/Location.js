@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "../styleSheets/Location.css";
 
 //map imports
 import {
@@ -20,6 +21,7 @@ import {
   ComboboxOption,
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
+import UserSidebar from "../components/UserSidebar";
 //constants for the map
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -72,28 +74,36 @@ export default function Location() {
 
   if (loadError) return "Error loading maps";
   if (!isLoaded) return "Loading Maps";
+
   return (
-    <div>
-      <h1>
-        {lat}
-        {long}
-      </h1>
+    <div className="user-ui">
+      <div className="ui-container">
+        <UserSidebar />
+        <div className="location-content">
+          <div>
+            <h1>
+              {lat}
+              {long}
+            </h1>
 
-      <Search panTo={panTo} />
-      <Locate panTo={panTo} />
+            <Search panTo={panTo} />
+            <Locate panTo={panTo} />
 
-      <GoogleMap
-        mapContainerStyle={mapContainerStyle}
-        zoom={8}
-        center={center}
-        options={options}
-        onLoad={onMapLoad}
-      >
-        <Marker
-          position={center}
-          icon="https://lakelandescaperoom.com/wp-content/uploads/2019/11/google-map-marker-red-peg-png-image-red-pin-icon-png-clipart-pins-on-a-map-png-880_1360.jpg"
-        ></Marker>
-      </GoogleMap>
+            <GoogleMap
+              mapContainerStyle={mapContainerStyle}
+              zoom={8}
+              center={center}
+              options={options}
+              onLoad={onMapLoad}
+            >
+              <Marker
+                position={center}
+                icon="https://lakelandescaperoom.com/wp-content/uploads/2019/11/google-map-marker-red-peg-png-image-red-pin-icon-png-clipart-pins-on-a-map-png-880_1360.jpg"
+              ></Marker>
+            </GoogleMap>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

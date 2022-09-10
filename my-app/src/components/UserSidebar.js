@@ -24,6 +24,9 @@ const UserSidebar = () => {
           <div className="support-history">
             <Link to="/userhome">Support History</Link>
           </div>
+          <div className="store-locations">
+            <Link to="/location">Locations</Link>
+          </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
           </div>
@@ -43,6 +46,9 @@ const UserSidebar = () => {
           </div>
           <div className="support-history">
             <Link to="/userhome">Support History</Link>
+          </div>
+          <div className="store-locations">
+            <Link to="/location">Locations</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
@@ -64,6 +70,9 @@ const UserSidebar = () => {
           <div className="support-history">
             <Link to="/userhome">Support History</Link>
           </div>
+          <div className="store-locations">
+            <Link to="/location">Locations</Link>
+          </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
           </div>
@@ -84,6 +93,9 @@ const UserSidebar = () => {
             <img src={indicator}></img>
             <Link to="/userhome">Support History</Link>
           </div>
+          <div className="store-locations">
+            <Link to="/location">Locations</Link>
+          </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
           </div>
@@ -102,6 +114,9 @@ const UserSidebar = () => {
           </div>
           <div className="support-history">
             <Link to="/userhome">Support History</Link>
+          </div>
+          <div className="store-locations">
+            <Link to="/location">Locations</Link>
           </div>
           <div className="settings">
             <img src={indicator}></img>
@@ -123,6 +138,9 @@ const UserSidebar = () => {
           <div className="support-history">
             <Link to="/userhome">Support History</Link>
           </div>
+          <div className="store-locations">
+            <Link to="/location">Locations</Link>
+          </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
           </div>
@@ -142,6 +160,32 @@ const UserSidebar = () => {
           </div>
           <div className="support-history">
             <Link to="/userhome">Support History</Link>
+          </div>
+          <div className="store-locations">
+            <Link to="/location">Locations</Link>
+          </div>
+          <div className="settings">
+            <Link to="/userhome">Settings</Link>
+          </div>
+        </>
+      )}
+      {window.location.href.includes("location") && (
+        <>
+          <div className="home">
+            <Link to="/userhome">Home</Link>
+          </div>
+          <div className="faqs">
+            <Link to="/userhome">FAQs</Link>
+          </div>
+          <div className="order-history">
+            <Link to="/userhome">Order History</Link>
+          </div>
+          <div className="support-history">
+            <Link to="/userhome">Support History</Link>
+          </div>
+          <div className="store-locations">
+            <img src={indicator}></img>
+            <Link to="/location">Locations</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
