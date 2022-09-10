@@ -5,10 +5,6 @@
     flex-direction: column;
 }
 
-.email-form-container-user{
-
-}
-
 
 .email-form-user{
     display: flex;
@@ -16,7 +12,13 @@
     align-items: left;
 }
 
-.email-form-user input[type=text], input[type=email]{
+.email-form-user input[type=text]{
+    background-color: #FFF8F0;
+    border: 1px solid #827F7C;
+    min-height: 48px;
+    max-width: 838px;
+}
+.email-form-user input[type=email]{
     background-color: #FFF8F0;
     border: 1px solid #827F7C;
     min-height: 48px;
