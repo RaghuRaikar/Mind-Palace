@@ -40,7 +40,12 @@ const AdminSidebar = () => {
             <Link to="/adminhome">Dashboard</Link>
           </div>
           <div className="chat">
-            <Link to="/userhome">Chat</Link>
+            <a
+              target="_blank"
+              href="https://dashboard.kommunicate.io/conversations"
+            >
+              Chat
+            </a>
           </div>
           <div className="email">
             <img src={indicator}></img>
