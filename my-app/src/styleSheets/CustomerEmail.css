@@ -9,6 +9,7 @@
 
 }
 
+
 .email-form-user{
     display: flex;
     flex-direction: column;
@@ -16,10 +17,10 @@
 }
 
 .email-form-user input[type=text], input[type=email]{
-    background-color: #f5f5f5;
-    border: none;
+    background-color: #FFF8F0;
+    border: 1px solid #827F7C;
     min-height: 48px;
-    min-width: 1038px;
+    max-width: 838px;
 }
 
 .email-form-user input[type=file]{
@@ -27,17 +28,21 @@
 }
 
 .email-form-user textarea{
-    background-color: #f5f5f5;
-    border: none;
+    background-color: #FFF8F0;
+    border: 1px solid #827F7C;
     min-height: 190px;
+    max-height: 190px;
+    max-width: 838px;
+    min-width: 838px;
 }
 
 .email-submit-button {
     width: 120px;
     height: 40px;
-    align-self: flex-end;
+    margin-left: 722px;
+
     border-radius: 5px;
     padding: 12px, 20px;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: #FFF8F0;
 }

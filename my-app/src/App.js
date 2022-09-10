@@ -17,6 +17,7 @@ import EmailConfirmation from "./pages/EmailConfirmation";
 import AdminHome from "./pages/AdminHome";
 import AdminEmail from "./pages/AdminEmail";
 import ChatAI from "./components/ChatAI";
+import TextUs from "./pages/TextUs";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -67,6 +68,7 @@ function App() {
         <Route path="/email-confirmation" element={<EmailConfirmation />} />
         <Route path="/adminhome" element={<AdminHome />} />
         <Route path="/admin-email-view" element={<AdminEmail />} />
+        <Route path="/text-us" element={<TextUs />} />
       </Routes>
     </Router>
   );

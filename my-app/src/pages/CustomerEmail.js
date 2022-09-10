@@ -50,7 +50,7 @@ const CustomerEmail = () => {
 
   return (
     <div className="user-ui">
-      <UserTopNav />
+      {/* <UserTopNav /> */}
       <div className="ui-container">
         <UserSidebar />
         <div className="email-content">

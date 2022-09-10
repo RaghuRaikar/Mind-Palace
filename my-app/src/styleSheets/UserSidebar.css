@@ -1,8 +1,10 @@
+
 .sidebar {
     display: flex;
     flex-direction: column;
     min-width: 230px;
-    background-color: #FFF8F0;    
+    background-color: #F4D06F;    
+    font-family: 'DM Sans';
     
 }
 

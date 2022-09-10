@@ -2,18 +2,23 @@
     width: 100%;
     /* change width to 1200px if there are problems */
     margin-left: 30px;
+    font-family: 'DM Sans';
 }
 
 .admin-email-view-container{
     margin-top: 50px;
+    max-height: 900px;
 }
 
 .single-email {
     /* border: 1px solid red; */
-    border-radius: 8px;
+    
     margin-bottom: 2%;
-    width: 90%;
-    background-color: #f5f5f5;
+    
+    max-width: 878px;
+    min-width: 878px;
+
+    background-color: #FFF8F0;
     cursor: pointer;
 }
 

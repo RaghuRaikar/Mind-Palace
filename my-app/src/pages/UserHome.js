@@ -12,7 +12,7 @@ const UserHome = () => {
 
   return (
     <div className="user-ui">
-      <UserTopNav />
+      {/* <UserTopNav /> */}
 
       <div className="ui-container">
         <UserSidebar />
@@ -67,22 +67,34 @@ const UserHome = () => {
           <h2>Still have questions? We're here to help!</h2>
           <div className="contact-selections">
             <div onClick={() => navigate("/email-us")}>
-              <img alt="FAQ" src={questionMark}></img>
-              <b1>Frequently Asked Questions</b1>
+              <img
+                className="contact-us-img"
+                alt="FAQ"
+                src={questionMark}
+              ></img>
+              <b1 className="contact-us-text">FAQs</b1>
             </div>
 
             <div onClick={() => navigate("/email-us")}>
-              <img alt="Live Chat" src={chatWithUs}></img>
-              <b1>Chat with us</b1>
+              <img
+                className="contact-us-img"
+                alt="Live Chat"
+                src={chatWithUs}
+              ></img>
+              <b1 className="contact-us-text">Chat with us</b1>
             </div>
 
             <div onClick={() => navigate("/email-us")}>
-              <img alt="email us" src={emailinquiry}></img>
-              <b1>Email Inquiry</b1>
+              <img
+                className="contact-us-img"
+                alt="email us"
+                src={emailinquiry}
+              ></img>
+              <b1 className="contact-us-text">Email Inquiry</b1>
             </div>
-            <div onClick={() => navigate("/email-us")}>
-              <img alt="Text Us" src={textUs}></img>
-              <b1>Text Us</b1>
+            <div onClick={() => navigate("/text-us")}>
+              <img className="contact-us-img" alt="Text Us" src={textUs}></img>
+              <b1 className="contact-us-text">Text Us</b1>
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import "../styleSheets/EmailConfirmation.css";
+import "../styleSheets/TextUs.css";
 import UserSidebar from "../components/UserSidebar";
 import UserTopNav from "../components/UserTopNav";
 
-const EmailConfirmation = () => {
+const TextUs = () => {
   const navigate = useNavigate();
 
   return (
@@ -11,11 +11,11 @@ const EmailConfirmation = () => {
       {/* <UserTopNav /> */}
       <div className="ui-container">
         <UserSidebar />
-        <div className="email-confirmation-content">
-          <div className="confirmation-box">
-            <h1>We got your email!</h1>
-            <b1>We'll aim to reply in approximately 1 - 2 business days.</b1>
-            <b1>Have more questions? Read our FAQs!</b1>
+        <div className="text-messaging-content">
+          <div className="text-info-box">
+            <h1>Prefer to text? </h1>
+            <b1>Text us at 120231232</b1>
+            <b1>A representative will respond as soon as they're available</b1>
             <button onClick={() => navigate("/userhome")}>
               Return to Home
             </button>
@@ -26,4 +26,4 @@ const EmailConfirmation = () => {
   );
 };
 
-export default EmailConfirmation;
+export default TextUs;

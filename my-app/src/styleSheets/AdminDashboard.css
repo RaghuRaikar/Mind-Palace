@@ -3,6 +3,7 @@
     flex-direction: column;
     height: 100vh;
     /* change height to 100vh if there are problems */
+    font-family: 'DM Sans';
 }
 
 /* ui container comes from userHome.css */
@@ -35,6 +36,7 @@
 .right-sidebar{
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .admin-top-nav {
@@ -48,6 +50,14 @@
     justify-content: center;
 }
 
+.admin-top-nav h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #392F5A
+}
+
 .upcoming-tasks{
     min-width: 300px;
     min-height: 330px;
@@ -58,7 +68,7 @@
 
 .notes {
     min-width: 300px;
-    height: 100vh;
+    
     border: 1px solid green;
     background-color: #FFF8F0;
 }
