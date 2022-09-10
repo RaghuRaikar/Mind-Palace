@@ -47,6 +47,10 @@ const AdminEmail = () => {
               <div className="single-email">No emails to display</div>
             )}
           </div>
+          <div className="admin-email-response-container">
+            <div className="email-response-area" contentEditable></div>
+            <button className="admin-email-reply-button">Reply</button>
+          </div>
         </div>
         <AdminRightSidebar />
       </div>

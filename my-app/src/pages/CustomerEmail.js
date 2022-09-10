@@ -45,7 +45,7 @@ const CustomerEmail = () => {
       }
     );
     e.target.reset();
-    navigate("./email-confirmation");
+    navigate("/email-confirmation");
   };
 
   return (

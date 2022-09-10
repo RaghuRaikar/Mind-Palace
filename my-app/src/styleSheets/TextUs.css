@@ -14,7 +14,7 @@
     border: 1px solid black;
     width: 450px;
     height: 244px;
-    background-color: #f5f5f5;
+    background-color: #FFF8F0;
     padding: 20px;
     box-sizing: border-box;
     margin-left: 30%;
@@ -37,4 +37,6 @@
     margin-top: 15px;
     padding: 12px, 20px;
     cursor: pointer;
+    font-size: medium;
+    font-family: 'DM Sans';
 }

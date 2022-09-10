@@ -13,8 +13,8 @@ const TextUs = () => {
         <UserSidebar />
         <div className="text-messaging-content">
           <div className="text-info-box">
-            <h1>Prefer to text? </h1>
-            <b1>Text us at 120231232</b1>
+            <h1>Want support by text? </h1>
+            <b1>Text us at 573-920-3702</b1>
             <b1>A representative will respond as soon as they're available</b1>
             <button onClick={() => navigate("/userhome")}>
               Return to Home

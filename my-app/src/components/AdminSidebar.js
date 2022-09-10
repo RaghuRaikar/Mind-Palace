@@ -16,7 +16,12 @@ const AdminSidebar = () => {
             <Link to="/adminhome">Dashboard</Link>
           </div>
           <div className="chat">
-            <Link to="/adminhome">Chat</Link>
+            <a
+              target="_blank"
+              href="https://dashboard.kommunicate.io/conversations"
+            >
+              Chat
+            </a>
           </div>
           <div className="email">
             <Link to="/admin-email-view">Email</Link>

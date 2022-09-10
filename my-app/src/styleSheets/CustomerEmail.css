@@ -17,12 +17,14 @@
     border: 1px solid #827F7C;
     min-height: 48px;
     max-width: 838px;
+    font-size: large;
 }
 .email-form-user input[type=email]{
     background-color: #FFF8F0;
     border: 1px solid #827F7C;
     min-height: 48px;
     max-width: 838px;
+    font-size: large;
 }
 
 .email-form-user input[type=file]{
@@ -36,6 +38,8 @@
     max-height: 190px;
     max-width: 838px;
     min-width: 838px;
+    font-size: large;
+    font-family: 'DM Sans';
 }
 
 .email-submit-button {
@@ -47,4 +51,6 @@
     padding: 12px, 20px;
     cursor: pointer;
     background-color: #FFF8F0;
+
+    font-family: 'DM Sans';
 }
