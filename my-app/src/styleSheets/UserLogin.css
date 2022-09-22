@@ -36,7 +36,7 @@
     margin-bottom: 20px;
 }
 
-.user-login-form button {
+.user-login-button {
     background-color: #392F5A;
     border: none;
     border-radius: 5px;
@@ -49,6 +49,13 @@
 
 .user-login-form button:hover {
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user-login-form a {
+  font-size: 15px;
+  color: #392F5A;
+  text-decoration:underline;
+  align-self: flex-end;
 }
   
   /* GOOGLE BUTTOn */

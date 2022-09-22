@@ -27,7 +27,7 @@ const AdminSidebar = () => {
             <Link to="/admin-email-view">Email</Link>
           </div>
           <div className="video">
-            <Link to="/videocall">Video Chat</Link>
+            <Link to="/videocall">Video Call</Link>
           </div>
           <div className="settings">
             <Link to="/adminhome">Settings</Link>
@@ -52,7 +52,7 @@ const AdminSidebar = () => {
             <Link to="/admin-email-view">Email</Link>
           </div>
           <div className="video">
-            <Link to="/videocall">Video Chat</Link>
+            <Link to="/videocall">Video Call</Link>
           </div>
           <div className="settings">
             <Link to="/adminhome">Settings</Link>

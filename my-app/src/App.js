@@ -14,7 +14,7 @@ import EmailConfirmation from "./pages/EmailConfirmation";
 import AdminHome from "./pages/AdminHome";
 import AdminEmail from "./pages/AdminEmail";
 import TextUs from "./pages/TextUs";
-import WebcamSelfie from "./pages/WebcamSelfie"
+import WebcamSelfie from "./pages/WebcamSelfie";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -47,7 +47,7 @@ function App() {
         )}
       </nav> */}
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<AdminAuth />} />
         <Route
           path="/customerauth"
           element={<CustomerAuth setIsAuth={setIsAuth} />}
@@ -56,6 +56,7 @@ function App() {
           path="/adminauth"
           element={<AdminAuth setIsAuth={setIsAuth} />}
         />
+        <Route path="/devnav" element={<LandingPage />} />
         <Route path="/location" element={<Location />} />
         <Route path="/videocall" element={<VideoDashboard />} />
         <Route path="/userhome" element={<UserHome />} />

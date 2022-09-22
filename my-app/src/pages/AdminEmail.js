@@ -36,10 +36,11 @@ const AdminEmail = () => {
                   className="single-email"
                   onClick={() => console.log("on click show reply form")}
                 >
-                  <p>
-                    FROM: {email.name} - {email.emailAddress}
-                  </p>
-                  <p>ABOUT: {email.subject}</p>
+                  <h3>
+                    Name: {email.name} <br></br>
+                    Email: {email.emailAddress} <br></br>
+                    Subject: {email.subject}
+                  </h3>
                   <p>{email.body}</p>
                 </div>
               ))

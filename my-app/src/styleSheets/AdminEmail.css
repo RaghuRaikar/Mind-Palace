@@ -15,6 +15,11 @@
     
 }
 
+.admin-email-view-container div:hover{
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+
 .admin-email-response-container{
     
     height: 300px;
@@ -74,6 +79,14 @@
     overflow: auto;
 }
 
+
 .single-email p {
     margin-left: 10px;
+    color: #392F5A;
+}
+
+.single-email h3 {
+    margin-left: 10px;
+    color: #392F5A;
+    font-weight: 400;
 }

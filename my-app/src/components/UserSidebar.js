@@ -22,7 +22,7 @@ const UserSidebar = () => {
       setIsAuth(false);
       setIsUser(false);
       //window.location.pathname = "/";
-      navigate("/");
+      navigate("/customerauth");
     });
   };
 

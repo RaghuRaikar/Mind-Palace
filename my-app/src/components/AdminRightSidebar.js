@@ -1,6 +1,8 @@
 import "../styleSheets/AdminDashboard.css";
 import account from "../icons/account.png";
 //import bell from "../icons/bell.png";
+import checkmark from "../icons/admin-checkmark.png";
+import closeTask from "../icons/admin-x.png";
 
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -37,6 +39,14 @@ const AdminRightSidebar = () => {
       </div>
       <div className="upcoming-tasks">
         <h2>Upcoming Tasks</h2>
+        <div>
+          Email - Joanna
+          <img src={checkmark} alt="Task complete"></img>
+        </div>
+        <div>
+          Video call - Werner
+          <img src={checkmark} alt="Task complete"></img>
+        </div>
       </div>
       <div className="notes">
         <h2>Notes</h2>

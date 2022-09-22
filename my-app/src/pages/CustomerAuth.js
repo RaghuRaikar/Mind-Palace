@@ -1,7 +1,7 @@
 import React from "react";
 import { auth, provider } from "../firebase-config";
 import { signInWithPopup } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../styleSheets/UserLogin.css";
 import loginLogo from "../icons/user-login-logo.png";
 
@@ -25,11 +25,12 @@ function CustomerAuth({ setIsAuth }) {
         <input placeholder="name@email.com" type="email"></input>
         <label>Password</label>
         <input type="password"></input>
-        <button>Sign in</button>
+        <button className="user-login-button">Sign in</button>
+        <button className="login-with-google-btn" onClick={signInWithGoogle}>
+          Sign in with Google
+        </button>
+        <Link to="/">Admin login</Link>
       </form>
-      <button className="login-with-google-btn" onClick={signInWithGoogle}>
-        Sign in with Google
-      </button>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { auth, provider } from "../firebase-config";
 import { signInWithPopup } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../styleSheets/AdminLogin.css";
 import loginLogo from "../icons/admin-login-logo.png";
 
@@ -33,6 +33,7 @@ function AdminAuth({ setIsUser }) {
           <button className="login-with-google-btn" onClick={signInWithGoogle}>
             Sign in with Google
           </button>
+          <Link to="/customerauth">Customer login</Link>
         </form>
       </div>
     </div>

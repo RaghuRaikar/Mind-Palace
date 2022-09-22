@@ -17,13 +17,11 @@ const LandingPage = () => {
       </nav>
       <br></br>
       <div className="landing-buttons">
-        <button onClick={() => navigate("./userhome")}>User View</button>
-        <button onClick={() => navigate("./adminhome")}>Admin view</button>
+        <button onClick={() => navigate("/userhome")}>User View</button>
+        <button onClick={() => navigate("/adminhome")}>Admin view</button>
         <br></br>
-        <button onClick={() => navigate("./adminauth")}>
-          Sign in as Admin
-        </button>
-        <button onClick={() => navigate("./customerauth")}>
+        <button onClick={() => navigate("/")}>Sign in as Admin</button>
+        <button onClick={() => navigate("/customerauth")}>
           Sign in as User
         </button>
       </div>
