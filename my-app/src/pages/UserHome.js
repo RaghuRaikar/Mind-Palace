@@ -37,8 +37,8 @@ const UserHome = () => {
             </div>
             <div className="product-inquiry">
               <h2>Product Inquiry</h2>
-              <b1>Have a question about a certain product? Check here!</b1>
-              <button>Product Information</button>
+              <b1>Have a question about a ncertain product? Check here!</b1>
+              <button>Product Info</button>
             </div>
           </div>
           <div className="bottom-row">

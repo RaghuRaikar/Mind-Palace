@@ -4,6 +4,7 @@ import UserSidebar from "../components/UserSidebar";
 import UserTopNav from "../components/UserTopNav";
 import "../styleSheets/CustomerEmail.css";
 import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify';
 
 // For emailJS api - hide in .env later
 const serviceID = "service_bj1j7ol";
@@ -79,7 +80,7 @@ const CustomerEmail = () => {
               />
               <h2>Message</h2>
               <textarea
-                placeholder="Describe your issue"
+                placeholder="Describe your issue."
                 required
                 name="emailBody"
               ></textarea>
