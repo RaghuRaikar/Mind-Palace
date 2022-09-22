@@ -11,7 +11,7 @@ function AdminAuth({ setIsUser }) {
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider).then((result) => {
       localStorage.setItem("isUser", true);
-      setIsUser(true);
+      //setIsUser(true);
       navigate("/adminhome");
     });
   };
@@ -23,7 +23,7 @@ function AdminAuth({ setIsUser }) {
         <h1>The Shoe Hut</h1>
       </div>
       <div className="admin-login-screen-right">
-        <form className="admin-login-form">
+        <div className="admin-login-form">
           <h1>Welcome back</h1>
           <label>Email</label>
           <input placeholder="name@email.com" type="email"></input>
@@ -34,7 +34,7 @@ function AdminAuth({ setIsUser }) {
             Sign in with Google
           </button>
           <Link to="/customerauth">Customer login</Link>
-        </form>
+        </div>
       </div>
     </div>
     // <div className="loginPage">

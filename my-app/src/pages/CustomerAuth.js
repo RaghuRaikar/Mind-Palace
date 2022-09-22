@@ -20,7 +20,7 @@ function CustomerAuth({ setIsAuth }) {
     <div className="loginPage">
       <img src={loginLogo} alt="Logo"></img>
       <h1> The Shoe Hut Support Centre </h1>
-      <form className="user-login-form">
+      <div className="user-login-form">
         <label>Email</label>
         <input placeholder="name@email.com" type="email"></input>
         <label>Password</label>
@@ -30,7 +30,7 @@ function CustomerAuth({ setIsAuth }) {
           Sign in with Google
         </button>
         <Link to="/">Admin login</Link>
-      </form>
+      </div>
     </div>
   );
 }
