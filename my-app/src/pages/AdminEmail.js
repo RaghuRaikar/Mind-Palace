@@ -2,8 +2,35 @@ import { useState, useEffect } from "react";
 import AdminRightSidebar from "../components/AdminRightSidebar";
 import AdminSidebar from "../components/AdminSidebar";
 import "../styleSheets/AdminEmail.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AdminEmail = () => {
+
+  // const notify = () => {
+  //   toast.success("Email sent!", {
+  //     position: "bottom-left",
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //   });
+  // };
+
+  const notify = () => {
+    toast.success("email sent", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   const [emails, setEmails] = useState([]);
 
   // load emails from db
@@ -50,10 +77,21 @@ const AdminEmail = () => {
           </div>
           <div className="admin-email-response-container">
             <div className="email-response-area" contentEditable></div>
-            <button className="admin-email-reply-button">Reply</button>
+            <button onClick={notify} className="admin-email-reply-button">Reply</button>
           </div>
         </div>
         <AdminRightSidebar />
+        <ToastContainer
+          position="bottom-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </div>
     </div>
   );
