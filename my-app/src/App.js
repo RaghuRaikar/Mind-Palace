@@ -4,19 +4,17 @@ import { useState } from "react";
 import LandingPage from "./pages/LandingPage";
 import CustomerAuth from "./pages/CustomerAuth";
 import AdminAuth from "./pages/AdminAuth";
-import Messaging from "./pages/Messaging";
 import Location from "./pages/Location";
 import VideoDashboard from "./pages/VideoCall/VideoDashboard";
 import { auth } from "./firebase-config";
-import SupportAdmin from "./SupportAdmin";
 import { signOut } from "firebase/auth";
 import UserHome from "./pages/UserHome";
 import CustomerEmail from "./pages/CustomerEmail";
 import EmailConfirmation from "./pages/EmailConfirmation";
 import AdminHome from "./pages/AdminHome";
 import AdminEmail from "./pages/AdminEmail";
-import ChatAI from "./components/ChatAI";
 import TextUs from "./pages/TextUs";
+import WebcamSelfie from "./pages/WebcamSelfie"
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -58,9 +56,7 @@ function App() {
           path="/adminauth"
           element={<AdminAuth setIsAuth={setIsAuth} />}
         />
-        <Route path="/messaging" element={<Messaging />} />
         <Route path="/location" element={<Location />} />
-        <Route path="/support" element={<SupportAdmin />} />
         <Route path="/videocall" element={<VideoDashboard />} />
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/email-us" element={<CustomerEmail />} />
@@ -68,6 +64,7 @@ function App() {
         <Route path="/adminhome" element={<AdminHome />} />
         <Route path="/admin-email-view" element={<AdminEmail />} />
         <Route path="/text-us" element={<TextUs />} />
+        <Route path="/webcam" element={<WebcamSelfie />} />
       </Routes>
     </Router>
   );

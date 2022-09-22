@@ -12,8 +12,6 @@ const LandingPage = () => {
         <Link to="/"> Home </Link>
         <Link to="/customerauth"> Customer Login </Link>
         <Link to="/adminauth"> Admin Login </Link>
-        <Link to="/email"> Email </Link>
-        <Link to="/messaging"> Messaging </Link>
         <Link to="/location"> Location </Link>
         <Link to="/videocall"> VideoCall </Link>
       </nav>

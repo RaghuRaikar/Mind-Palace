@@ -37,9 +37,6 @@ const UserSidebar = () => {
             <img src={indicator}></img>
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <Link to="/userhome">Order History</Link>
           </div>
@@ -48,6 +45,9 @@ const UserSidebar = () => {
           </div>
           <div className="store-locations">
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="webcam">
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="user-settings-div">
             <Link to="/userhome">Settings</Link>
