@@ -68,10 +68,6 @@ const UserSidebar = () => {
           <div className="home">
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <img src={indicator}></img>
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <Link to="/userhome">Order History</Link>
           </div>
@@ -80,6 +76,10 @@ const UserSidebar = () => {
           </div>
           <div className="store-locations">
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="faqs">
+            <img src={indicator}></img>
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
@@ -100,9 +100,6 @@ const UserSidebar = () => {
           <div className="home">
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <img src={indicator}></img>
             <Link to="/userhome">Order History</Link>
@@ -112,6 +109,9 @@ const UserSidebar = () => {
           </div>
           <div className="store-locations">
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="faqs">
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
@@ -132,9 +132,6 @@ const UserSidebar = () => {
           <div className="home">
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <Link to="/userhome">Order History</Link>
           </div>
@@ -144,6 +141,9 @@ const UserSidebar = () => {
           </div>
           <div className="store-locations">
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="faqs">
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
@@ -164,9 +164,6 @@ const UserSidebar = () => {
           <div className="home">
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <Link to="/userhome">Order History</Link>
           </div>
@@ -175,6 +172,9 @@ const UserSidebar = () => {
           </div>
           <div className="store-locations">
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="faqs">
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="settings">
             <img src={indicator}></img>
@@ -196,9 +196,6 @@ const UserSidebar = () => {
           <div className="home">
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <Link to="/userhome">Order History</Link>
           </div>
@@ -207,6 +204,9 @@ const UserSidebar = () => {
           </div>
           <div className="store-locations">
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="faqs">
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
@@ -228,9 +228,6 @@ const UserSidebar = () => {
             <img src={indicator}></img>
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <Link to="/userhome">Order History</Link>
           </div>
@@ -239,6 +236,9 @@ const UserSidebar = () => {
           </div>
           <div className="store-locations">
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="faqs">
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
@@ -259,9 +259,6 @@ const UserSidebar = () => {
           <div className="home">
             <Link to="/userhome">Home</Link>
           </div>
-          <div className="faqs">
-            <Link to="/userhome">FAQs</Link>
-          </div>
           <div className="order-history">
             <Link to="/userhome">Order History</Link>
           </div>
@@ -271,6 +268,9 @@ const UserSidebar = () => {
           <div className="store-locations">
             <img src={indicator}></img>
             <Link to="/location">Locations</Link>
+          </div>
+          <div className="faqs">
+            <Link to="/webcam">Send Image</Link>
           </div>
           <div className="settings">
             <Link to="/userhome">Settings</Link>
