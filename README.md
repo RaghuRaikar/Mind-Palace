@@ -1,11 +1,101 @@
-# Mind-Palace
-Web app that allows users to contact customer support through various different means, such as email, phone text, and in-app messaging.
+🏛️ Mind-Palace
+---------------
 
-The key features are: 
+Mind-Palace is a **multi-channel customer support web application** that enables users to contact customer service through **email, SMS, in-app messaging, and video chat.** It enhances customer experience by providing seamless communication and support features in one unified platform.
 
-1. User Authentication - Log in as a Customer, or as Admin 
-2. Send email to a designated Admin email - View emails received on the application 
-3. Create in-app messaging system to chat with an Admin account 
-4. Send text messages through phone number to a designated Admin number 
-5. Be able to find live location and share it 
-6. Take pictures and be able to share it
+### 🌟 Key Features
+
+✔ **User Authentication** -- Customers and Admins can log in securely\
+✔ **Email Support** -- Send emails to designated Admin emails and view responses in-app\
+✔ **In-App Messaging** -- Chat directly with Admins through a real-time messaging system\
+✔ **SMS Integration** -- Send text messages to Admin support numbers\
+✔ **Live Location Sharing** -- Users can share their real-time location for assistance\
+✔ **Media Uploads** -- Capture and share images for support inquiries\
+✔ **Video Chat** -- Integrated **Whereby API** for live customer-agent interactions
+
+* * * * *
+
+### 🎬 Demo & Screenshots
+
+🔗 **Watch the Demo Video**\
+Here are some screenshots of the platform in action:
+
+#### 🔹 User Dashboard
+
+📌 The **customer support dashboard** provides quick access to chat, emails, and video calls.
+
+#### 🔹 Admin Dashboard
+
+📌 The **customer support dashboard** provides quick access to chat, emails, and video calls.
+
+#### 🔹 Real-Time Chat
+
+💬 Users can **message support staff** and receive responses instantly.
+
+#### 🔹 Email Support
+
+📩 Customers can send and **track email inquiries** directly from the app.
+
+#### 🔹 Video Support
+
+🎥 Users can **join live video calls** for real-time support.
+
+#### 🔹 Location Sharing
+
+📍 Customers can **share their location** to receive better assistance.
+
+* * * * *
+
+### ⚙️ Tech Stack
+
+| **Technology** | **Usage** |
+| --- | --- |
+| **React.js** | Frontend Framework |
+| **Node.js** | Backend API |
+| **Firebase** | Authentication & Database |
+| **AWS S3** | File Storage |
+| **Google Maps API** | Location Sharing |
+| **Whereby API** | Video Chat Integration |
+
+* * * * *
+
+### 🚀 Getting Started
+
+Follow these steps to set up the project locally:
+
+#### 1️⃣ Clone the repository
+
+`git clone https://github.com/yourusername/mind-palace.git`  
+`cd mind-palace`
+
+#### 2️⃣ Install dependencies
+
+`npm install`
+
+#### 3️⃣ Set up environment variables
+
+Create a `.env` file and add the following:
+
+`REACT_APP_FIREBASE_API_KEY=your_firebase_key`  
+`REACT_APP_WHEREBY_API_KEY=your_whereby_key`  
+`REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_key`
+
+#### 4️⃣ Start the development server
+
+`npm start`
+
+The application will be available at **http://localhost:3000** 🎉
+
+* * * * *
+
+### 🛠 Future Enhancements
+
+✅ AI-powered chat assistant\
+✅ Multi-language support\
+✅ More integrations with CRM tools
+
+* * * * *
+
+### 📬 Contact & Contribute
+
+Feel free to **contribute, report issues, or suggest features!** 🚀
