@@ -43,7 +43,7 @@ Here are some screenshots of the platform in action:
 
 #### 🔹 Real-Time Chat
 
-💬 Users can **message support staff** and receive responses instantly.
+💬 Users can **message support staff** and receive responses instantly.  
 ![Chat](/chat.png)
 
 #### 🔹 Video Support
