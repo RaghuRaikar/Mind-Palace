@@ -19,30 +19,42 @@ Mind-Palace is a **multi-channel customer support web application** that enables
 
 🔗 **Watch the Demo Video**\
 Here are some screenshots of the platform in action:
+### 🔹 Home Page - User & Admin Options
+📌 Users can choose between **User View, Admin View, or Sign in as Admin/User**  
+![Home Page](/viewpage.png)
+
+### 🔹 User Login
+📌 Customers log in to access **chat, email support, and video call assistance**  
+![User Login](/UserLogin.png)
+
+### 🔹 Admin Login
+📌 Admins log in to **manage customer inquiries and respond to messages**  
+![Admin Login](/AdminLogin.png)
 
 #### 🔹 User Dashboard
 
 📌 The **customer support dashboard** provides quick access to chat, emails, and video calls.
+![User Dashboard](/UserHomepage.png)
 
 #### 🔹 Admin Dashboard
 
 📌 The **customer support dashboard** provides quick access to chat, emails, and video calls.
+![Admin Dashboard](/AdminTasks.png)
 
 #### 🔹 Real-Time Chat
 
 💬 Users can **message support staff** and receive responses instantly.
-
-#### 🔹 Email Support
-
-📩 Customers can send and **track email inquiries** directly from the app.
+![Chat](/chat.png)
 
 #### 🔹 Video Support
 
 🎥 Users can **join live video calls** for real-time support.
+![Video Chat](/VideoCall.png)
 
 #### 🔹 Location Sharing
 
 📍 Customers can **share their location** to receive better assistance.
+![Location](/LocationSharing.png)
 
 * * * * *
 
